@@ -70,14 +70,26 @@ public class firstProject {
         }
         int i = 0;
         while (i < 5) {
-            System.out.println(i);
+            if (i == 2) {
+                i++;
+                continue;
+            }
+            System.out.println("exemple1:" + i);
             i++;
         }
         int j = 3;
         do {
-            System.out.println(j);
+            System.out.println("exemple2:" + j);
             j++;
         } while (j < 5);
+
+        for (i = 0; i < 5; i++) {
+            if (i == 2) {
+                continue;
+            }
+            System.out.println(i);
+        }
+
     }
 
 }
